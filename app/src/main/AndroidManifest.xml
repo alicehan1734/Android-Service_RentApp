@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.android_project">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 카메라 권한 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 파일 읽기 권한 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 파일 쓰기 권한 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Request_answer"></activity>
+        <activity android:name=".like_listproduct" />
+        <activity android:name=".Store_Information" />
+        <activity android:name=".searchItem_category" />
+        <activity android:name=".Close_image" />
+        <activity android:name=".Revise_nickname" />
+        <activity android:name=".Search_item" />
+        <activity android:name=".item_image" />
+        <activity android:name=".user_input_dialog_box" />
+        <activity android:name=".Creat_category" />
+        <activity android:name=".Post2" />
+        <activity android:name=".CalendarView" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+             android:hardwareAccelerated = "false"
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".map"
+            android:label="@string/title_activity_map" />
+        <activity android:name=".activity_5_find_login" />
+        <activity android:name=".activity_4_agreement_position" />
+        <activity android:name=".activity_4_agreement_service" />
+        <activity android:name=".activity_main_setting" />
+        <activity android:name=".activity_main_mystore" />
+        <activity android:name=".Chatroom" />
+        <activity android:name=".activity_6_checkdistance" />
+        <activity android:name=".activity_6_checkdistance_sub" />
+        <activity android:name=".activity_3_signup_page" />
+        <activity android:name=".activity_main_creat" />
+        <activity android:name=".activity_main_favorite" />
+        <activity android:name=".mainpoint_map" />
+        <activity android:name=".activity_2_main" />
+        <activity android:name=".activity_revise_main_creat" />
+        <activity android:name=".activity_1_firstpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_main_point" />
+        <activity
+            android:name="com.gun0912.tedpicker.ImagePickerActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

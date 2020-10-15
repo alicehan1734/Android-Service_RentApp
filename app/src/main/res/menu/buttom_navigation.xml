@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_baseline_create_24"
+        android:title="Create"/>
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="Chat"/>
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_baseline_account_box_24"
+        android:title="Account"/>
+</menu>

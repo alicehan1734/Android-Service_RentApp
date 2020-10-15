@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_6_checkdistance_sub">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_frontbar_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/colorlightBlue"
+        >
+
+        <ImageView
+            android:id="@+id/ImageView_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clear"
+            android:clickable="true">  //클릭할수있도록 설정
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 동네 설정하기"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            ></TextView>
+
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/TextView_findposition"
+        app:layout_constraintTop_toBottomOf="@id/RelativeLayout_frontbar_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintHeight_percent="0.05"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:background="@drawable/round_textedit"
+        android:hint="자신의 위치를 찾아보세요"
+        android:textSize="12dp"
+        android:textColorHint="@color/searchHint"
+        android:textColor="@color/searchText"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        >
+    </TextView>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/Button_savedistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="저장"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#EF4B53"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        ></Button>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내가 선택한 주소 "
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_findposition" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상단바를 선택하여 주소를 찾아보세요."
+        app:layout_constraintBottom_toTopOf="@+id/Button_checkdistance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

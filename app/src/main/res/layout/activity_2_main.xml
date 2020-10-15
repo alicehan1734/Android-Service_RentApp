@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_2_main"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+
+    >
+
+    <ImageView
+        app:layout_constraintHeight_percent="0.2"
+        android:id="@+id/ImageView_logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:src="@drawable/logo_2nd"
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintHeight_percent="0.1"
+        android:id="@+id/TextInputLayout_id"
+        app:layout_constraintTop_toBottomOf="@id/ImageView_logo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일"
+            android:id="@+id/TextInputEditText_email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintHeight_percent="0.1"
+        android:id="@+id/TextInputLayout_password"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:passwordToggleEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:id="@+id/TextInputEditText_password"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<Switch
+    app:layout_constraintHeight_percent="0.05"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/Switch_auto_login"
+    android:text="자동로그인"
+    app:layout_constraintTop_toBottomOf="@id/TextInputLayout_password"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/Button_login"
+    app:layout_constraintWidth_percent="0.7"
+    >
+</Switch>
+    <Button
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/Button_login"
+        app:layout_constraintTop_toBottomOf="@id/Switch_auto_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/TextView_or"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="로그인"
+        android:background="@drawable/btn_blue"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:clickable="true"
+
+        />
+
+    <TextView
+        app:layout_constraintHeight_percent="0.02"
+        android:id="@+id/TextView_or"
+        app:layout_constraintTop_toBottomOf="@id/Button_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="0R"
+        android:layout_marginBottom="10dp"
+
+        android:gravity="center"/>
+
+
+    <Button
+        app:layout_constraintHeight_percent="0.05"
+        android:id="@+id/Button_signup"
+        app:layout_constraintTop_toBottomOf="@id/TextView_or"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/TextView_findidpass"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="계정이 없으신가요?"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:background="@drawable/btn_white"
+        />
+
+    <TextView
+        app:layout_constraintHeight_percent="0.1"
+        android:id="@+id/TextView_findidpass"
+        app:layout_constraintTop_toBottomOf="@id/Button_signup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/RelativeLayout_kakao"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="아이디/비밀번호 찾기 >"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        app:layout_constraintHeight_percent="0.1"
+        android:id="@+id/RelativeLayout_kakao"
+        app:layout_constraintTop_toBottomOf="@id/TextView_findidpass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/RelativeLayout_naver"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_yellow"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginBottom="13dp"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/kakao_talk"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            ></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="카카오로 쉬운시작 "
+            android:textColor="#4C2824"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_naver"
+        app:layout_constraintTop_toBottomOf="@id/RelativeLayout_kakao"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/btn_green"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:clickable="true"
+        app:layout_constraintHeight_percent="0.1"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/naver"
+            android:layout_centerVertical="true"
+            ></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="네이버로 쉬운시작 "
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
