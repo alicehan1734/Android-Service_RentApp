@@ -12,7 +12,7 @@
 활용기술 : 
 1. Firebase 
 2. FCM
-3. 카카오 구글 로그인
+3. 카카오 및 구글 로그인 API
 4. Google Maps Api
 5. Shared Preference 
 6. Date Picker, retrofit, photopicker API 등 
