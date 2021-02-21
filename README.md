@@ -1,7 +1,7 @@
 # 5분 빌림
 
-![1](https://user-images.githubusercontent.com/71608206/108620509-f6753380-746f-11eb-9b7d-7ad768334ed7.PNG)
 ![2](https://user-images.githubusercontent.com/71608206/108620510-f70dca00-746f-11eb-98ab-4ff20094993a.PNG)
+![1](https://user-images.githubusercontent.com/71608206/108620509-f6753380-746f-11eb-9b7d-7ad768334ed7.PNG)
 
 렌트샵 어플 ( 팔기는 싫고 그렇다고 사기는 싫은 사람들을 위해 5분만에 쉽고 간편하게 물건들을 렌트할 수 있도록 만들어주는 어플입니다.)
 
